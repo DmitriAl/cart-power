@@ -1,0 +1,240 @@
+/* Slider */
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    &:focus {
+        outline: none;
+    }
+
+    &.dragging {
+        cursor: pointer;
+        cursor: hand;
+    }
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+}
+
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+
+    [dir="rtl"] & {
+        float: right;
+    }
+
+    img {
+        display: block;
+    }
+
+    &.slick-loading img {
+        display: none;
+    }
+
+    display: none;
+
+    &.dragging img {
+        pointer-events: none;
+    }
+
+    .slick-initialized & {
+        display: block;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+
+    .slick-vertical & {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    color: transparent;
+    background-color: #000;
+    border-radius: 50%;
+    border: none;
+    transform: translateY(-50%);
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    width: 2.5em;
+    height: 2.5em;
+
+    &:hover {
+        background-color: @accent-color;
+    }
+
+    &::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        content: '\e802';
+        font-family: Icons;
+        font-size: 1.2em;
+        color: #fff;
+    }
+}
+
+.slick-prev {
+    right: calc(100% + 1rem);
+
+    &::before {
+        transform: translate(-50%, -50%);
+    }
+}
+
+.slick-next {
+    left: calc(100% + 1rem);
+
+    &::before {
+        transform: translate(-50%, -50%) rotate(180deg);
+    }
+}
+
+.media .slick-disabled {
+    display: none !important;
+}
+
+.goods-card {
+    & .slick-track {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    & .slick-track:before,
+    & .slick-track:after {
+        content: none;
+    }
+
+    &--small .slick-arrow {
+        width: 2em;
+        height: 2em;
+
+        &::before {
+            font-size: 1.1em;
+        }
+    }
+
+    &--small .slick-prev {
+        right: calc(100% + 0.8rem);
+    }
+
+    &--small .slick-next {
+        left: calc(100% + 0.8rem);
+    }
+
+    &--large .slick-arrow {
+        width: 2.8125em;
+        height: 2.8125em;
+
+        &::before {
+            font-size: 1.3625em;
+        }
+    }
+
+    &--large .slick-prev {
+        right: calc(100% + 4rem);
+    }
+
+    &--large .slick-next {
+        left: calc(100% + 4rem);
+    }
+}
+
+@media screen and (max-width: 1367px) {
+    .slick-arrow {
+        top: calc(100% + 2rem);
+        transform: none;
+    }
+
+    .slick-prev {
+        right: calc(50% + 1rem);
+    }
+
+    .slick-next {
+        left: calc(50% + 1rem);
+    }
+
+    .goods-card {
+        &--large .slick-arrow {
+            width: 2em;
+            height: 2em;
+
+            &::before {
+                font-size: 1.1em;
+            }
+        }
+
+        &--small .slick-prev,
+        &--large .slick-prev {
+            right: calc(50% + 1rem);
+        }
+
+        &--small .slick-next,
+        &--large .slick-next {
+            left: calc(50% + 1rem);
+        }
+    }
+}
