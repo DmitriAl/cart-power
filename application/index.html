@@ -2,500 +2,507 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
-  <header class="header">
-    <div class="container">
-      <div class="header__top">
-        <div class="header__city"><a class="link link--dark" href="#">Нижний Новгород</a>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <div class="header__city"><a class="link link--dark" href="#">Нижний Новгород</a>
+                </div>
+                <button type="button" class="burger"></button>
+                <nav class="nav">
+                    <button class="nav__close">
+                        &#10006;
+                    </button>
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Как заказать</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link active" href="#">Доставка и оплата</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Кредит и рассрочка</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Сборка</a>
+                        </li>
+                        <li class="nav__item nav__item--sub">
+                            <a class="nav__link" href="#">Частые вопросы</a>
+                            <ul class="nav__sublist">
+                                <li class="nav__subitem">
+                                    <a class="nav__link" href="#">О нас</a>
+                                </li>
+                                <li class="nav__subitem">
+                                    <a class="nav__link" href="#">Отзывы</a>
+                                </li>
+                                <li class="nav__subitem">
+                                    <a class="nav__link" href="#">Гарантии</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="header__tel link" href="tel:+73472926252">+7 (347) 292-62-52</a>
+            </div>
+            <div class="header__bottom">
+                <div class="logo">
+                    <h3 class="logo__title">
+                        Test
+                    </h3>
+                    <p class="logo__text">
+                        Сеть мебельных магазинов
+                    </p>
+                </div>
+                <form class="header__search search">
+                    <button class="search__menu" type="button">
+                        Каталог
+                    </button>
+                    <input class="search__input" type="search" name="search" id="search"
+                        placeholder="Например, двухъярусная кровать">
+                    <button class="search__submit" type="submit"><i class="icon-search"></i></button>
+                </form>
+                <div class="header__buttons">
+                    <button class="like like--heart button"></button>
+                    <button class="header__adress button" type="button" disabled>Адреса</button>
+                    <a class="header__profile button">Профиль</a>
+                    <div class="shopping-cart">
+                        <button class="shopping-cart__button button" type="button">
+                            <i class="shopping-cart__icon icon-shoppingCart"></i>
+                        </button>
+                        <span class="shopping-cart__counter">1</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <button type="button" class="burger"></button>
-        <nav class="nav">
-          <button class="nav__close">
-            &#10006;
-          </button>
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="#">Как заказать</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link active" href="#">Доставка и оплата</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Кредит и рассрочка</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Сборка</a>
-            </li>
-            <li class="nav__item nav__item--sub">
-              <a class="nav__link" href="#">Частые вопросы</a>
-              <ul class="nav__sublist">
-                <li class="nav__subitem">
-                  <a class="nav__link" href="#">О нас</a>
-                </li>
-                <li class="nav__subitem">
-                  <a class="nav__link" href="#">Отзывы</a>
-                </li>
-                <li class="nav__subitem">
-                  <a class="nav__link" href="#">Гарантии</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-        <a class="header__tel link" href="tel:+73472926252">+7 (347) 292-62-52</a>
-      </div>
-      <div class="header__bottom">
-        <div class="logo">
-          <h3 class="logo__title">
-            Test
-          </h3>
-          <p class="logo__text">
-            Сеть мебельных магазинов
-          </p>
-        </div>
-        <form class="header__search search">
-          <button class="search__menu" type="button">
-            Каталог
-          </button>
-          <input class="search__input" type="search" name="search" id="search"
-            placeholder="Например, двухъярусная кровать">
-          <button class="search__submit" type="submit"><i class="icon-search"></i></button>
-        </form>
-        <div class="header__buttons">
-          <button class="like like--heart button"></button>
-          <button class="header__adress button" type="button" disabled>Адреса</button>
-          <a class="header__profile button">Профиль</a>
-          <div class="shopping-cart">
-            <button class="shopping-cart__button button" type="button">
-              <i class="shopping-cart__icon icon-shoppingCart"></i>
-            </button>
-            <span class="shopping-cart__counter">1</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
+    </header>
 
 
-  <main class="main">
-    <section class="hero">
-      <div class="hero--container container">
-        <div class="hero__plug plug">
-          <ul class="hero__breadcrumb breadcrumb">
-            <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Главная</a></li>
-            <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Все коллекции</a></li>
-            <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Альба</a></li>
-            <li class="breadcrumb__item"><a class="breadcrumb__link active" href="#">Спальня</a></li>
-          </ul>
-          <h1 class="hero__title title">Спальня</h1>
-          <p class="hero__subtitle subtitle">Спальня коллекции Альба</p>
-        </div>
-      </div>
-    </section>
+    <main class="main">
+        <section class="hero">
+            <div class="hero--container container">
+                <div class="hero__plug plug">
+                    <ul class="hero__breadcrumb breadcrumb">
+                        <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Главная</a></li>
+                        <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Все коллекции</a></li>
+                        <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Альба</a></li>
+                        <li class="breadcrumb__item"><a class="breadcrumb__link active" href="#">Спальня</a></li>
+                    </ul>
+                    <h1 class="hero__title title">Спальня</h1>
+                    <p class="hero__subtitle subtitle">Спальня коллекции Альба</p>
+                </div>
+            </div>
+        </section>
 
-    <section class="media">
-      <div class="container">
-        <h2 class="media__title title">Фотографии и видео</h2>
-        <ul class="media__list">
-          <li class="media__item plug"></li>
-          <li class="media__item plug video"><i class="media__icon icon-video"></i></li>
-          <li class="media__item plug"></li>
-          <li class="media__item plug"></li>
-          <li class="media__item plug"></li>
-          <li class="media__item plug video"><i class="media__icon icon-video"></i></li>
-          <li class="media__item plug"></li>
-          <li class="media__item plug"></li>
-        </ul>
-        <p class="media__text">
-          Представляем вашему вниманию спальный гарнитур «Натали» Он выполнен в классическом стиле с элементами
-          аристократии и роскоши. В комплект входят: кровать, прикроватные тумбы, несколько вариантов шкафов и комод с
-          зеркалом. Обратите внимание, все модули комплекта вы можете приобрести по отдельности. Коллекция «Натали»
-          может
-          быть выполнена в двух цветах: в темном оттенке «Орех», а также в более светлом решении «Клен Ясень Бежевый»
-          Рекомендуем Вам обязательно посмотреть видео спальни, гостиной и прихожей из коллекции «Натали».
-        </p>
-      </div>
-    </section>
-
-    <section class="selection">
-      <div class="container">
-        <h2 class="selection__title title">Подборка один</h2>
-        <div class="selection__wrapper">
-          <form class="selection__cart cart-form" action="#" method="POST" id="cart-form">
-            <label class="cart-form__item">
-              <input class="cart-form__checkbox" type="checkbox" name="commodity" checked>
-              <i class="checkbox icon-checkbox"></i>
-              <span class="cart-form__product-name">
-                Кровать «Триумф» 160
-              </span>
-              <span class="cart-form__product-price price">
-                8 000 ₽
-              </span>
-            </label>
-            <label class="cart-form__item">
-              <input class="cart-form__checkbox" type="checkbox" name="commodity" checked>
-              <i class="checkbox icon-checkbox"></i>
-              <span class="cart-form__product-name">
-                Матрас средний
-              </span>
-              <span class="cart-form__product-price price">
-                10 000 ₽
-              </span>
-            </label>
-            <label class="cart-form__item">
-              <input class="cart-form__checkbox" type="checkbox" name="commodity">
-              <i class="checkbox icon-checkbox"></i>
-              <span class="cart-form__product-name">
-                Тумба прикроватная
-              </span>
-              <span class="cart-form__product-price price">
-                2 000 ₽
-              </span>
-            </label>
-            <label class="cart-form__item">
-              <input class="cart-form__checkbox" type="checkbox" name="commodity" checked>
-              <i class="checkbox icon-checkbox"></i>
-              <span class="cart-form__product-name">
-                Шкаф 4-дверный
-              </span>
-              <span class="cart-form__product-price price">
-                10 000 ₽
-              </span>
-            </label>
-            <label class="cart-form__item">
-              <input class="cart-form__checkbox" type="checkbox" name="commodity" checked>
-              <i class="checkbox icon-checkbox"></i>
-              <span class="cart-form__product-name">
-                Комод
-              </span>
-              <span class="cart-form__product-price price">
-                2 000 ₽
-              </span>
-            </label>
-            <label class="cart-form__item">
-              <input class="cart-form__checkbox" type="checkbox" name="commodity" checked>
-              <i class="checkbox icon-checkbox"></i>
-              <span class="cart-form__product-name">
-                Зеркало
-              </span>
-              <span class="cart-form__product-price price">
-                2 000 ₽
-              </span>
-            </label>
-            <label class="cart-form__item">
-              <input class="cart-form__checkbox" type="checkbox" name="commodity" checked>
-              <i class="checkbox icon-checkbox"></i>
-              <span class="cart-form__product-name">
-                Пуф
-              </span>
-              <span class="cart-form__product-price price">
-                2 000 ₽
-              </span>
-            </label>
-            <label class="cart-form__item cart-form__item--total">
-              <span class="cart-form__product-name">
-                Итого
-              </span>
-              <span class="cart-form__product-price price">
-                2 000 ₽
-              </span>
-            </label>
-            <button class="submit" type="submit">Добавить товары в корзину</button>
-          </form>
-          <ul class="selection__goods goods goods-card goods-card--small">
-            <li class="goods__item">
-              <div class="goods__plug plug">
-                <picture class="goods__picture">
-                  <img class="goods__image" src="" alt="">
-                </picture>
-              </div>
-              <div class="goods__description goods__description--light">
-                <ul class="rating">
-                  <i class="rating__icon icon-star"></i>
-                  <i class="rating__icon icon-star"></i>
-                  <i class="rating__icon icon-star"></i>
-                  <i class="rating__icon icon-star"></i>
-                  <i class="rating__icon icon-halfStar"></i>
+        <section class="media">
+            <div class="container">
+                <h2 class="media__title title">Фотографии и видео</h2>
+                <ul class="media__list">
+                    <li class="media__item plug"></li>
+                    <li class="media__item plug video"><i class="media__icon icon-video"></i></li>
+                    <li class="media__item plug"></li>
+                    <li class="media__item plug"></li>
+                    <li class="media__item plug"></li>
+                    <li class="media__item plug video"><i class="media__icon icon-video"></i></li>
+                    <li class="media__item plug"></li>
+                    <li class="media__item plug"></li>
                 </ul>
-                <h4 class="goods__title">Кровать «Триумф»</h4>
-                <span class="goods__price price">8 000 ₽</span>
-                <button class="goods__submit submit" form="cart-form" type="submit">В корзину</button>
-              </div>
-            </li>
-            <li class="goods__item">
-              <div class="goods__plug plug">
-                <picture class="goods__picture">
-                  <img class="goods__image" src="" alt="">
-                </picture>
-              </div>
-              <div class="goods__description goods__description--light">
-                <div class="rating">
-                  <i class="rating__icon icon-star"></i>
-                  <i class="rating__icon icon-star"></i>
-                  <i class="rating__icon icon-star"></i>
-                  <i class="rating__icon icon-star"></i>
-                  <i class="rating__icon icon-halfStar"></i>
+                <p class="media__text">
+                    Представляем вашему вниманию спальный гарнитур «Натали» Он выполнен в классическом стиле с
+                    элементами
+                    аристократии и роскоши. В комплект входят: кровать, прикроватные тумбы, несколько вариантов шкафов и
+                    комод с
+                    зеркалом. Обратите внимание, все модули комплекта вы можете приобрести по отдельности. Коллекция
+                    «Натали»
+                    может
+                    быть выполнена в двух цветах: в темном оттенке «Орех», а также в более светлом решении «Клен Ясень
+                    Бежевый»
+                    Рекомендуем Вам обязательно посмотреть видео спальни, гостиной и прихожей из коллекции «Натали».
+                </p>
+            </div>
+        </section>
+
+        <section class="selection">
+            <div class="container">
+                <h2 class="selection__title title">Подборка один</h2>
+                <div class="selection__wrapper">
+                    <form class="selection__cart cart-form" action="#" method="POST" id="cart-form">
+                        <label class="cart-form__item">
+                            <input class="cart-form__checkbox" type="checkbox" name="commodity" checked>
+                            <i class="checkbox icon-checkbox"></i>
+                            <span class="cart-form__product-name">
+                                Кровать «Триумф» 160
+                            </span>
+                            <span class="cart-form__product-price price">
+                                8 000 ₽
+                            </span>
+                        </label>
+                        <label class="cart-form__item">
+                            <input class="cart-form__checkbox" type="checkbox" name="commodity" checked>
+                            <i class="checkbox icon-checkbox"></i>
+                            <span class="cart-form__product-name">
+                                Матрас средний
+                            </span>
+                            <span class="cart-form__product-price price">
+                                10 000 ₽
+                            </span>
+                        </label>
+                        <label class="cart-form__item">
+                            <input class="cart-form__checkbox" type="checkbox" name="commodity">
+                            <i class="checkbox icon-checkbox"></i>
+                            <span class="cart-form__product-name">
+                                Тумба прикроватная
+                            </span>
+                            <span class="cart-form__product-price price">
+                                2 000 ₽
+                            </span>
+                        </label>
+                        <label class="cart-form__item">
+                            <input class="cart-form__checkbox" type="checkbox" name="commodity" checked>
+                            <i class="checkbox icon-checkbox"></i>
+                            <span class="cart-form__product-name">
+                                Шкаф 4-дверный
+                            </span>
+                            <span class="cart-form__product-price price">
+                                10 000 ₽
+                            </span>
+                        </label>
+                        <label class="cart-form__item">
+                            <input class="cart-form__checkbox" type="checkbox" name="commodity" checked>
+                            <i class="checkbox icon-checkbox"></i>
+                            <span class="cart-form__product-name">
+                                Комод
+                            </span>
+                            <span class="cart-form__product-price price">
+                                2 000 ₽
+                            </span>
+                        </label>
+                        <label class="cart-form__item">
+                            <input class="cart-form__checkbox" type="checkbox" name="commodity" checked>
+                            <i class="checkbox icon-checkbox"></i>
+                            <span class="cart-form__product-name">
+                                Зеркало
+                            </span>
+                            <span class="cart-form__product-price price">
+                                2 000 ₽
+                            </span>
+                        </label>
+                        <label class="cart-form__item">
+                            <input class="cart-form__checkbox" type="checkbox" name="commodity" checked>
+                            <i class="checkbox icon-checkbox"></i>
+                            <span class="cart-form__product-name">
+                                Пуф
+                            </span>
+                            <span class="cart-form__product-price price">
+                                2 000 ₽
+                            </span>
+                        </label>
+                        <label class="cart-form__item cart-form__item--total">
+                            <span class="cart-form__product-name">
+                                Итого
+                            </span>
+                            <span class="cart-form__product-price price">
+                                2 000 ₽
+                            </span>
+                        </label>
+                        <button class="submit" type="submit">Добавить товары в корзину</button>
+                    </form>
+                    <ul class="selection__goods goods goods-card goods-card--small">
+                        <li class="goods__item">
+                            <div class="goods__plug plug">
+                                <picture class="goods__picture">
+                                    <img class="goods__image" src="" alt="">
+                                </picture>
+                            </div>
+                            <div class="goods__description goods__description--light">
+                                <ul class="rating">
+                                    <i class="rating__icon icon-star"></i>
+                                    <i class="rating__icon icon-star"></i>
+                                    <i class="rating__icon icon-star"></i>
+                                    <i class="rating__icon icon-star"></i>
+                                    <i class="rating__icon icon-halfStar"></i>
+                                </ul>
+                                <h4 class="goods__title">Кровать «Триумф»</h4>
+                                <span class="goods__price price">8 000 ₽</span>
+                                <button class="goods__submit submit" form="cart-form" type="submit">В корзину</button>
+                            </div>
+                        </li>
+                        <li class="goods__item">
+                            <div class="goods__plug plug">
+                                <picture class="goods__picture">
+                                    <img class="goods__image" src="" alt="">
+                                </picture>
+                            </div>
+                            <div class="goods__description goods__description--light">
+                                <div class="rating">
+                                    <i class="rating__icon icon-star"></i>
+                                    <i class="rating__icon icon-star"></i>
+                                    <i class="rating__icon icon-star"></i>
+                                    <i class="rating__icon icon-star"></i>
+                                    <i class="rating__icon icon-halfStar"></i>
+                                </div>
+                                <h4 class="goods__title">Кровать «Триумф»</h4>
+                                <span class="goods__price price">8 000 ₽</span>
+                                <button class="goods__submit submit" form="cart-form" type="submit">В корзину</button>
+                            </div>
+                        </li>
+                        <li class="goods__item">
+                            <div class="goods__plug plug">
+                                <picture class="goods__picture">
+                                    <img class="goods__image" src="" alt="">
+                                </picture>
+                            </div>
+                            <div class="goods__description goods__description--light">
+                                <div class="rating">
+                                    <i class="rating__icon icon-star"></i>
+                                    <i class="rating__icon icon-star"></i>
+                                    <i class="rating__icon icon-star"></i>
+                                    <i class="rating__icon icon-star"></i>
+                                    <i class="rating__icon icon-halfStar"></i>
+                                </div>
+                                <h4 class="goods__title">Кровать «Триумф»</h4>
+                                <span class="goods__price price">8 000 ₽</span>
+                                <button class="goods__submit submit" form="cart-form" type="submit">В корзину</button>
+                            </div>
+                        </li>
+                        <li class="goods__item">
+                            <div class="goods__plug plug">
+                                <picture class="goods__picture">
+                                    <img class="goods__image" src="" alt="">
+                                </picture>
+                            </div>
+                            <div class="goods__description goods__description--light">
+                                <div class="rating">
+                                    <i class="rating__icon icon-star"></i>
+                                    <i class="rating__icon icon-star"></i>
+                                    <i class="rating__icon icon-star"></i>
+                                    <i class="rating__icon icon-star"></i>
+                                    <i class="rating__icon icon-halfStar"></i>
+                                </div>
+                                <h4 class="goods__title">Кровать «Триумф»</h4>
+                                <span class="goods__price price">8 000 ₽</span>
+                                <button class="goods__submit submit" form="cart-form" type="submit">В корзину</button>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <h4 class="goods__title">Кровать «Триумф»</h4>
-                <span class="goods__price price">8 000 ₽</span>
-                <button class="goods__submit submit" form="cart-form" type="submit">В корзину</button>
-              </div>
-            </li>
-            <li class="goods__item">
-              <div class="goods__plug plug">
-                <picture class="goods__picture">
-                  <img class="goods__image" src="" alt="">
-                </picture>
-              </div>
-              <div class="goods__description goods__description--light">
-                <div class="rating">
-                  <i class="rating__icon icon-star"></i>
-                  <i class="rating__icon icon-star"></i>
-                  <i class="rating__icon icon-star"></i>
-                  <i class="rating__icon icon-star"></i>
-                  <i class="rating__icon icon-halfStar"></i>
+            </div>
+        </section>
+
+        <section class="bedroom">
+            <div class="container">
+                <h2 class="bedroom__title title">Для спальни</h2>
+                <ul class="bedroom__goods goods goods-card goods-card--large">
+                    <li class="goods__item">
+                        <div class="goods__plug plug">
+                            <div class="goods__discount discount">
+                                -10%
+                            </div>
+                            <picture class="goods__picture">
+                                <img class="goods__image" src="" alt="">
+                            </picture>
+                        </div>
+                        <div class="goods__description">
+                            <div class="rating">
+                                <i class="rating__icon icon-star"></i>
+                                <i class="rating__icon icon-star"></i>
+                                <i class="rating__icon icon-star"></i>
+                                <i class="rating__icon icon-star"></i>
+                                <i class="rating__icon icon-halfStar"></i>
+                            </div>
+                            <h4 class="goods__title">Кровать «Триумф»</h4>
+                            <span class="old-price">18 000 ₽</span>
+                            <span class="goods__price price">8 000 ₽</span>
+                            <button class="goods__submit submit" form="cart-form" type="submit">В корзину</button>
+                        </div>
+                    </li>
+                    <li class="goods__item">
+                        <div class="goods__plug plug">
+                            <div class="goods__discount discount">
+                                -10%
+                            </div>
+                            <picture class="goods__picture">
+                                <img class="goods__image" src="" alt="">
+                            </picture>
+                        </div>
+                        <div class="goods__description">
+                            <div class="rating">
+                                <i class="rating__icon icon-star"></i>
+                                <i class="rating__icon icon-star"></i>
+                                <i class="rating__icon icon-star"></i>
+                                <i class="rating__icon icon-star"></i>
+                                <i class="rating__icon icon-halfStar"></i>
+                            </div>
+                            <h4 class="goods__title">Кровать «Триумф»</h4>
+                            <span class="old-price">18 000 ₽</span>
+                            <span class="goods__price price">8 000 ₽</span>
+                            <button class="goods__submit submit" form="cart-form" type="submit">В корзину</button>
+                        </div>
+                    </li>
+                    <li class="goods__item">
+                        <div class="goods__plug plug">
+                            <div class="goods__discount discount">
+                                -10%
+                            </div>
+                            <picture class="goods__picture">
+                                <img class="goods__image" src="" alt="">
+                            </picture>
+                        </div>
+                        <div class="goods__description">
+                            <div class="rating">
+                                <i class="rating__icon icon-star"></i>
+                                <i class="rating__icon icon-star"></i>
+                                <i class="rating__icon icon-star"></i>
+                                <i class="rating__icon icon-star"></i>
+                                <i class="rating__icon icon-halfStar"></i>
+                            </div>
+                            <h4 class="goods__title">Кровать «Триумф»</h4>
+                            <span class="old-price">18 000 ₽</span>
+                            <span class="goods__price price">8 000 ₽</span>
+                            <button class="goods__submit submit" form="cart-form" type="submit">В корзину</button>
+                        </div>
+                    </li>
+                    <li class="goods__item">
+                        <div class="goods__plug plug">
+                            <div class="goods__discount discount">
+                                -10%
+                            </div>
+                            <picture class="goods__picture">
+                                <img class="goods__image" src="" alt="">
+                            </picture>
+                        </div>
+                        <div class="goods__description">
+                            <div class="rating">
+                                <i class="rating__icon icon-star"></i>
+                                <i class="rating__icon icon-star"></i>
+                                <i class="rating__icon icon-star"></i>
+                                <i class="rating__icon icon-star"></i>
+                                <i class="rating__icon icon-halfStar"></i>
+                            </div>
+                            <h4 class="goods__title">Кровать «Триумф»</h4>
+                            <span class="old-price">18 000 ₽</span>
+                            <span class="goods__price price">8 000 ₽</span>
+                            <button class="goods__submit submit" form="cart-form" type="submit">В корзину</button>
+                        </div>
+                    </li>
+                    <li class="goods__item">
+                        <div class="goods__plug plug">
+                            <div class="goods__discount discount">
+                                -10%
+                            </div>
+                            <picture class="goods__picture">
+                                <img class="goods__image" src="" alt="">
+                            </picture>
+                        </div>
+                        <div class="goods__description">
+                            <div class="rating">
+                                <i class="rating__icon icon-star"></i>
+                                <i class="rating__icon icon-star"></i>
+                                <i class="rating__icon icon-star"></i>
+                                <i class="rating__icon icon-star"></i>
+                                <i class="rating__icon icon-halfStar"></i>
+                            </div>
+                            <h4 class="goods__title">Кровать «Триумф»</h4>
+                            <span class="old-price">18 000 ₽</span>
+                            <span class="goods__price price">8 000 ₽</span>
+                            <button class="goods__submit submit" form="cart-form" type="submit">В корзину</button>
+                        </div>
+                    </li>
+                    <li class="goods__item">
+                        <div class="goods__plug plug">
+                            <div class="goods__discount discount">
+                                -10%
+                            </div>
+                            <picture class="goods__picture">
+                                <img class="goods__image" src="" alt="">
+                            </picture>
+                        </div>
+                        <div class="goods__description">
+                            <div class="rating">
+                                <i class="rating__icon icon-star"></i>
+                                <i class="rating__icon icon-star"></i>
+                                <i class="rating__icon icon-star"></i>
+                                <i class="rating__icon icon-star"></i>
+                                <i class="rating__icon icon-halfStar"></i>
+                            </div>
+                            <h4 class="goods__title">Кровать «Триумф»</h4>
+                            <span class="old-price">18 000 ₽</span>
+                            <span class="goods__price price">8 000 ₽</span>
+                            <button class="goods__submit submit" form="cart-form" type="submit">В корзину</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="container container--large">
+            <div class="footer__top">
+                <h3 class="footer__title">Сайт рыбатекст поможет дизайнеру, верстальщику</h3>
+                <p class="footer__subtitle">Оставьте заявку и мы пришлем вам ссылку</p>
+                <form class="footer__form form" method="POST" action="">
+                    <input type="hidden" name="admin_email[]" value="gerechtung@gmail.com">
+                    <label class="form__label form__label--name">
+                        <input class="form__input" name="name" id="name" type="text" placeholder="Ваше имя"
+                            autocomplete="off" data-validate-field="name">
+                    </label>
+                    <label class="form__label form__label--tel">
+                        <input class="form__input" name="tel" id="tel" type="tel" placeholder="Ваш телефон"
+                            autocomplete="off" data-validate-field="tel">
+                    </label>
+                    <label class="form__label form__label--mail">
+                        <input class="form__input" name="email" id="email" type="email" placeholder="Ваша почта"
+                            autocomplete="off" data-validate-field="email">
+                    </label>
+                    <input class="form__submit" type="submit" value="Подписаться">
+                    <div class="subscribe">Подписка оформлена</div>
+                </form>
+            </div>
+            <div class="footer__middle">
+                <ul class="footer__menu menu">
+                    <li class="menu__item"><a class="menu__link" href="#">О нас</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Как сделать заказ</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Доставка</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Гарантия</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Сборка</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Адреса магазинов</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Вакансии</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Блог</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
+                </ul>
+                <div class="footer__social-wrapper">
+                    <ul class="footer__social social">
+                        <li class="social__item"><a class="social__link" href="https://instagram.com/"
+                                target="_blank">Инстаграм</a>
+                        </li>
+                        <li class="social__item"><a class="social__link" href="https://facebook.com/"
+                                target="_blank">Фейсбук</a>
+                        </li>
+                        <li class="social__item"><a class="social__link" href="https://vk.com/"
+                                target="_blank">Вконтакте</a></li>
+                    </ul>
+                    <a class="footer__tel link" href="tel:+73472926252">+7 (347) 292-62-52</a>
+                    <a class="footer__mail link" href="mailto:info@mebelhol.ru">info@mebelhol.ru</a>
                 </div>
-                <h4 class="goods__title">Кровать «Триумф»</h4>
-                <span class="goods__price price">8 000 ₽</span>
-                <button class="goods__submit submit" form="cart-form" type="submit">В корзину</button>
-              </div>
-            </li>
-            <li class="goods__item">
-              <div class="goods__plug plug">
-                <picture class="goods__picture">
-                  <img class="goods__image" src="" alt="">
-                </picture>
-              </div>
-              <div class="goods__description goods__description--light">
-                <div class="rating">
-                  <i class="rating__icon icon-star"></i>
-                  <i class="rating__icon icon-star"></i>
-                  <i class="rating__icon icon-star"></i>
-                  <i class="rating__icon icon-star"></i>
-                  <i class="rating__icon icon-halfStar"></i>
-                </div>
-                <h4 class="goods__title">Кровать «Триумф»</h4>
-                <span class="goods__price price">8 000 ₽</span>
-                <button class="goods__submit submit" form="cart-form" type="submit">В корзину</button>
-              </div>
-            </li>
-          </ul>
+            </div>
+            <div class="footer__bottom">
+                <a class="privacy link" href="#">Политика конфиденциальности</a>
+                <div class="copyright">2020, МебельХолл. Все права защищены</div>
+            </div>
         </div>
-      </div>
-    </section>
+    </footer>
 
-    <section class="bedroom">
-      <div class="container">
-        <h2 class="bedroom__title title">Для спальни</h2>
-        <ul class="bedroom__goods goods goods-card goods-card--large">
-          <li class="goods__item">
-            <div class="goods__plug plug">
-              <div class="goods__discount discount">
-                -10%
-              </div>
-              <picture class="goods__picture">
-                <img class="goods__image" src="" alt="">
-              </picture>
-            </div>
-            <div class="goods__description">
-              <div class="rating">
-                <i class="rating__icon icon-star"></i>
-                <i class="rating__icon icon-star"></i>
-                <i class="rating__icon icon-star"></i>
-                <i class="rating__icon icon-star"></i>
-                <i class="rating__icon icon-halfStar"></i>
-              </div>
-              <h4 class="goods__title">Кровать «Триумф»</h4>
-              <span class="old-price">18 000 ₽</span>
-              <span class="goods__price price">8 000 ₽</span>
-              <button class="goods__submit submit" form="cart-form" type="submit">В корзину</button>
-            </div>
-          </li>
-          <li class="goods__item">
-            <div class="goods__plug plug">
-              <div class="goods__discount discount">
-                -10%
-              </div>
-              <picture class="goods__picture">
-                <img class="goods__image" src="" alt="">
-              </picture>
-            </div>
-            <div class="goods__description">
-              <div class="rating">
-                <i class="rating__icon icon-star"></i>
-                <i class="rating__icon icon-star"></i>
-                <i class="rating__icon icon-star"></i>
-                <i class="rating__icon icon-star"></i>
-                <i class="rating__icon icon-halfStar"></i>
-              </div>
-              <h4 class="goods__title">Кровать «Триумф»</h4>
-              <span class="old-price">18 000 ₽</span>
-              <span class="goods__price price">8 000 ₽</span>
-              <button class="goods__submit submit" form="cart-form" type="submit">В корзину</button>
-            </div>
-          </li>
-          <li class="goods__item">
-            <div class="goods__plug plug">
-              <div class="goods__discount discount">
-                -10%
-              </div>
-              <picture class="goods__picture">
-                <img class="goods__image" src="" alt="">
-              </picture>
-            </div>
-            <div class="goods__description">
-              <div class="rating">
-                <i class="rating__icon icon-star"></i>
-                <i class="rating__icon icon-star"></i>
-                <i class="rating__icon icon-star"></i>
-                <i class="rating__icon icon-star"></i>
-                <i class="rating__icon icon-halfStar"></i>
-              </div>
-              <h4 class="goods__title">Кровать «Триумф»</h4>
-              <span class="old-price">18 000 ₽</span>
-              <span class="goods__price price">8 000 ₽</span>
-              <button class="goods__submit submit" form="cart-form" type="submit">В корзину</button>
-            </div>
-          </li>
-          <li class="goods__item">
-            <div class="goods__plug plug">
-              <div class="goods__discount discount">
-                -10%
-              </div>
-              <picture class="goods__picture">
-                <img class="goods__image" src="" alt="">
-              </picture>
-            </div>
-            <div class="goods__description">
-              <div class="rating">
-                <i class="rating__icon icon-star"></i>
-                <i class="rating__icon icon-star"></i>
-                <i class="rating__icon icon-star"></i>
-                <i class="rating__icon icon-star"></i>
-                <i class="rating__icon icon-halfStar"></i>
-              </div>
-              <h4 class="goods__title">Кровать «Триумф»</h4>
-              <span class="old-price">18 000 ₽</span>
-              <span class="goods__price price">8 000 ₽</span>
-              <button class="goods__submit submit" form="cart-form" type="submit">В корзину</button>
-            </div>
-          </li>
-          <li class="goods__item">
-            <div class="goods__plug plug">
-              <div class="goods__discount discount">
-                -10%
-              </div>
-              <picture class="goods__picture">
-                <img class="goods__image" src="" alt="">
-              </picture>
-            </div>
-            <div class="goods__description">
-              <div class="rating">
-                <i class="rating__icon icon-star"></i>
-                <i class="rating__icon icon-star"></i>
-                <i class="rating__icon icon-star"></i>
-                <i class="rating__icon icon-star"></i>
-                <i class="rating__icon icon-halfStar"></i>
-              </div>
-              <h4 class="goods__title">Кровать «Триумф»</h4>
-              <span class="old-price">18 000 ₽</span>
-              <span class="goods__price price">8 000 ₽</span>
-              <button class="goods__submit submit" form="cart-form" type="submit">В корзину</button>
-            </div>
-          </li>
-          <li class="goods__item">
-            <div class="goods__plug plug">
-              <div class="goods__discount discount">
-                -10%
-              </div>
-              <picture class="goods__picture">
-                <img class="goods__image" src="" alt="">
-              </picture>
-            </div>
-            <div class="goods__description">
-              <div class="rating">
-                <i class="rating__icon icon-star"></i>
-                <i class="rating__icon icon-star"></i>
-                <i class="rating__icon icon-star"></i>
-                <i class="rating__icon icon-star"></i>
-                <i class="rating__icon icon-halfStar"></i>
-              </div>
-              <h4 class="goods__title">Кровать «Триумф»</h4>
-              <span class="old-price">18 000 ₽</span>
-              <span class="goods__price price">8 000 ₽</span>
-              <button class="goods__submit submit" form="cart-form" type="submit">В корзину</button>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-  </main>
-
-
-  <footer class="footer">
-    <div class="container container--large">
-      <div class="footer__top">
-        <h3 class="footer__title">Сайт рыбатекст поможет дизайнеру, верстальщику</h3>
-        <p class="footer__subtitle">Оставьте заявку и мы пришлем вам ссылку</p>
-        <form class="footer__form form" method="POST" action="">
-          <input type="hidden" name="admin_email[]" value="gerechtung@gmail.com">
-          <label class="form__label form__label--name">
-            <input class="form__input" name="name" id="name" type="text" placeholder="Ваше имя" autocomplete="off"
-              data-validate-field="name">
-          </label>
-          <label class="form__label form__label--tel">
-            <input class="form__input" name="tel" id="tel" type="tel" placeholder="Ваш телефон" autocomplete="off"
-              data-validate-field="tel">
-          </label>
-          <label class="form__label form__label--mail">
-            <input class="form__input" name="email" id="email" type="email" placeholder="Ваша почта" autocomplete="off"
-              data-validate-field="email">
-          </label>
-          <input class="form__submit" type="submit" value="Подписаться">
-          <div class="subscribe">Подписка оформлена</div>
-        </form>
-      </div>
-      <div class="footer__middle">
-        <ul class="footer__menu menu">
-          <li class="menu__item"><a class="menu__link" href="#">О нас</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Как сделать заказ</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Доставка</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Гарантия</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Сборка</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Адреса магазинов</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Вакансии</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Блог</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
-        </ul>
-        <div class="footer__social-wrapper">
-          <ul class="footer__social social">
-            <li class="social__item"><a class="social__link" href="https://instagram.com/" target="_blank">Инстаграм</a>
-            </li>
-            <li class="social__item"><a class="social__link" href="https://facebook.com/" target="_blank">Фейсбук</a>
-            </li>
-            <li class="social__item"><a class="social__link" href="https://vk.com/" target="_blank">Вконтакте</a></li>
-          </ul>
-          <a class="footer__tel link" href="tel:+73472926252">+7 (347) 292-62-52</a>
-          <a class="footer__mail link" href="mailto:info@mebelhol.ru">info@mebelhol.ru</a>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <a class="privacy link" href="#">Политика конфиденциальности</a>
-        <div class="copyright">2020, МебельХолл. Все права защищены</div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="javascript/script.min.js"></script>
+    <script src="javascript/script.min.js"></script>
 </body>
 
 </html>

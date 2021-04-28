@@ -1,24 +1,24 @@
-@import "fonts.less";
-@import "icons.less";
-@import "variables.less";
-@import "slick.less";
+@import 'fonts.less';
+@import 'icons.less';
+@import 'variables.less';
+@import 'slick.less';
 
-input[type=text]::-ms-clear {
+input[type='text']::-ms-clear {
     display: none;
     width: 0;
     height: 0;
 }
 
-input[type=text]::-ms-reveal {
+input[type='text']::-ms-reveal {
     display: none;
     width: 0;
     height: 0;
 }
 
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
     display: none;
 }
 
@@ -98,7 +98,7 @@ h6 {
                 position: absolute;
                 top: 50%;
                 right: -1rem;
-                content: "";
+                content: '';
                 border-top: 5px solid #000;
                 border-left: 3.33px solid transparent;
                 border-right: 3.33px solid transparent;
@@ -197,7 +197,7 @@ h6 {
         border-top-left-radius: 0.6rem;
         border-bottom-left-radius: 0.6rem;
         background-color: #000;
-        transition: all .5s ease;
+        transition: all 0.5s ease;
         padding: 1.3rem 2rem 1.3rem 4.9rem;
 
         &::before {
@@ -243,7 +243,7 @@ h6 {
         border: 0;
         background: 0;
         transform: translateY(-50%);
-        transition: all .5s ease;
+        transition: all 0.5s ease;
         border-radius: 50%;
         color: #000;
         background-color: #fff;
@@ -255,7 +255,6 @@ h6 {
         &:hover {
             color: #fff;
             background-color: #000;
-
         }
     }
 }
@@ -306,7 +305,7 @@ h6 {
     }
 
     &.filled::before {
-        content: "\e810";
+        content: '\e810';
         font-family: Icons;
     }
 
@@ -352,7 +351,7 @@ h6 {
             position: absolute;
             left: 0;
             bottom: 0;
-            content: "";
+            content: '';
             background-color: rgba(0, 0, 0, 0.3);
             width: 100%;
             height: 1px;
@@ -369,7 +368,7 @@ h6 {
             top: -1px;
             left: 0;
             font-size: 1.3rem;
-            font-family: "Icons";
+            font-family: 'Icons';
             content: '\e80b';
         }
     }
@@ -431,8 +430,20 @@ h6 {
 
 .plug {
     position: relative;
-    background: linear-gradient(to bottom right, transparent 49.9%, #b0b0b0 49.9%, #b0b0b0 50.1%, transparent 50.1%),
-        linear-gradient(to top right, transparent 49.9%, #b0b0b0 49.9%, #b0b0b0 50.1%, transparent 50.1%),
+    background: linear-gradient(
+            to bottom right,
+            transparent 49.9%,
+            #b0b0b0 49.9%,
+            #b0b0b0 50.1%,
+            transparent 50.1%
+        ),
+        linear-gradient(
+            to top right,
+            transparent 49.9%,
+            #b0b0b0 49.9%,
+            #b0b0b0 50.1%,
+            transparent 50.1%
+        ),
         @gray;
     width: 100%;
     height: 100%;
@@ -475,7 +486,7 @@ h6 {
             position: absolute;
             top: 0;
             right: 0;
-            content: "/";
+            content: '/';
         }
     }
 
@@ -554,7 +565,6 @@ h6 {
             max-width: 69rem;
         }
     }
-
 }
 
 .cart-form {
@@ -612,7 +622,7 @@ h6 {
         line-height: 1;
         visibility: hidden;
 
-        &:checked~span {
+        &:checked ~ span {
             color: #000;
         }
     }
@@ -634,7 +644,7 @@ h6 {
     font-size: 2.7rem;
     transform: translateY(-23%);
 
-    .cart-form__checkbox:checked+&::before {
+    .cart-form__checkbox:checked + &::before {
         content: '\e803';
     }
 }
@@ -659,7 +669,7 @@ h6 {
         position: absolute;
         top: 50%;
         right: 2.4rem;
-        content: "\e80d";
+        content: '\e80d';
         font-family: Icons;
         line-height: 1;
         color: #fff;
@@ -672,7 +682,7 @@ h6 {
     width: 100%;
 
     &__item {
-        background-color: #E0E0E0;
+        background-color: #e0e0e0;
         border-radius: 0.6rem;
         // width: 100% !important;
         margin: 0 3px;
@@ -687,7 +697,7 @@ h6 {
     }
 
     &__description {
-        background-color: #E0E0E0;
+        background-color: #e0e0e0;
         border-bottom-left-radius: 0.6rem;
         border-bottom-right-radius: 0.6rem;
         padding: 15px 15px 20px;
@@ -758,10 +768,16 @@ h6 {
         position: absolute;
         top: 0;
         left: 0;
-        content: "";
+        content: '';
         width: 110%;
         height: 100%;
-        background: linear-gradient(-6deg, transparent 46%, #000 46%, #000 54%, transparent 54%);
+        background: linear-gradient(
+            -6deg,
+            transparent 46%,
+            #000 46%,
+            #000 54%,
+            transparent 54%
+        );
     }
 }
 
@@ -890,7 +906,7 @@ h6 {
         line-height: 1.1875em;
         color: #bebebe;
         border: none !important;
-        border-bottom: 1px solid #F9F9F9 !important;
+        border-bottom: 1px solid #f9f9f9 !important;
         background-color: transparent;
         outline: none;
         padding: 1em 0.1em 1em 2em;
@@ -930,7 +946,6 @@ h6 {
             font-size: 1.8rem;
         }
     }
-
 
     &__submit {
         font-family: Lato;
@@ -984,7 +999,6 @@ h6 {
         max-height: 100%;
     }
 }
-
 
 @media screen and (max-width: 880px) {
     .nav {
@@ -1065,18 +1079,28 @@ h6 {
         width: 30px;
         height: 20px;
         border: 0;
-        background-image: linear-gradient(transparent 40%, #000 40%, #000 60%, transparent 60%);
+        background-image: linear-gradient(
+            transparent 40%,
+            #000 40%,
+            #000 60%,
+            transparent 60%
+        );
         cursor: pointer;
 
         &:hover {
-            background-image: linear-gradient(transparent 40%, @accent-color 40%, @accent-color 60%, transparent 60%);
+            background-image: linear-gradient(
+                transparent 40%,
+                @accent-color 40%,
+                @accent-color 60%,
+                transparent 60%
+            );
         }
 
         &::before,
         &::after {
             position: absolute;
             left: 0;
-            content: "";
+            content: '';
             background-color: #000;
             width: 100%;
             height: 4px;
@@ -1231,7 +1255,6 @@ h6 {
     }
 }
 
-
 /* polyfils */
 
 _:-ms-input-placeholder,
@@ -1255,7 +1278,8 @@ _:-ms-input-placeholder,
 }
 
 _:-ms-input-placeholder,
-:root .nav, .burger {
+:root .nav,
+.burger {
     margin: 0 auto;
 }
 
