@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel application/javascript/script.js -d application/javascript/"
   },
   "author": "Dmitri Alexandrow",
   "license": "ISC",
@@ -19,6 +20,8 @@
     "normalize.css": "^8.0.1"
   },
   "dependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.13.16",
     "inputmask": "^5.0.5",
     "just-validate": "^1.5.0",
     "slick-carousel": "^1.8.1"
