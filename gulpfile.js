@@ -37,6 +37,7 @@ function scripts() {
     'application/javascript/jquery-scripts.js',
     'node_modules/just-validate/dist/js/just-validate.min.js',
     'node_modules/inputmask/dist/inputmask.min.js',
+    'node_modules/object-fit-images/dist/ofi.min.js',
     'application/javascript/script.js'
   ])
   .pipe(concat('script.min.js'))

@@ -24,6 +24,7 @@
     "@babel/core": "^7.13.16",
     "inputmask": "^5.0.5",
     "just-validate": "^1.5.0",
+    "object-fit-images": "^3.2.4",
     "slick-carousel": "^1.8.1"
   }
 }
